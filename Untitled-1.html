@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+</head>
+<body>
+    <script>
+        //1. 
+const strin1 = 'js';
+string = strin1.toUpperCase();
+console.log(string); // 'JS'
+
+
+//2. 
+let strin = 'я учу javascript!';
+let pos = strin.indexOf('учу');
+console.log(pos); // 2
+
+
+//3. 
+let stri = 'я учу javascript!';
+let words = stri.split(' ');
+console.log(words); // ['я', 'учу', 'javascript!']
+
+
+//4. 
+let str = 'aaa bbb ccc';
+
+let extracted1 = str.substr(4, 3);
+console.log(extracted1); // 'bbb'
+
+let extracted2 = str.substring(4, 7);
+console.log(extracted2); // 'bbb'
+
+let extracted3 = str.slice(4, 7);
+console.log(extracted3); // 'bbb'
+
+
+//5. 
+let datee = '2025-12-31';
+datee = datee.split('-').reverse().join('.');
+console.log(datee); // '31.12.2025'
+
+
+//6. 
+let date = '2025-12-31';
+date = date.split('-').join('/');
+console.log(date); // '31/12/2025'
+
+
+//7. 
+let objj = {name: "Sasha", age: 21, address: {city: "Minsk"}};
+let obj2 = JSON.parse(JSON.stringify(objj));
+
+
+//8. 
+let obj = {js:'test', jq: 'hello', css: 'world'};
+let keys = Object.keys(obj);
+console.log(keys); // ['js', 'jq', 'css']
+
+
+//9. 
+let arr1 = ['a', 'b', 'c'];
+let arr2 = [1, 2, 3];
+let mergedArr = arr1.concat(arr2);
+console.log(mergedArr); // ['a', 'b', 'c', 1, 2, 3]
+
+
+//10. 
+let arrr = ['a', 'b', 'c'];
+arrr.push(1, 2, 3);
+console.log(arrr); // ['a', 'b', 'c', 1, 2, 3]
+
+
+//12. 
+let arr = [1, 2, 3, 4, 5];
+let newArr = arr.slice(3);
+console.log(newArr); // [4, 5]
+
+
+
+//14.
+const anyNumber = [42, 65, 49, 68, 56, 47, 70, 42, 51, 35, 58, 63, 40, 70];
+anyNumber.sort((a, b) => b - a);
+console.log(anyNumber); // [70, 70, 68, 65, 63, 58, 56, 51, 49, 47, 42, 42, 40, 35]
+
+    </script>
+</body>
+</html>
